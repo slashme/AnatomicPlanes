@@ -1,6 +1,11 @@
 # AnatomicPlanes
 Blender 3D models of the main anatomical planes, applied to a human body.
 
+The model AnatomicPlanes.blend has scripted drivers, so to get it into the
+standard anatomical position, you need to "reload trusted".
+
+[Rendered version on Wikimedia Commons][https://commons.wikimedia.org/wiki/File:Human_anatomy_planes.jpg]
+
 Contributing
 ------------
 
