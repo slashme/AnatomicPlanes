@@ -4,6 +4,13 @@ Blender 3D models of the main anatomical planes, applied to a human body.
 The model AnatomicPlanes.blend has scripted drivers, so to get it into the
 standard anatomical position, you need to "reload trusted".
 
+Commands to create webm and animated gif using libav:
+
+avconv -framerate 24 -f image2 -i %02d.png -pix_fmt rgb24 -s 320x320 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - output.gif
+
+avconv -framerate 24 -f image2 -i %02d.png -c:v libvpx -c:a libvorbis -b:v 4M -qmin 0 -qmax 63 output.webm
+
+
 [Rendered version on Wikimedia Commons][https://commons.wikimedia.org/wiki/File:Human_anatomy_planes.jpg]
 
 Contributing
